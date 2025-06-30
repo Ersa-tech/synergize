@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => {
       }
     },
     server: {
+      host: '0.0.0.0', // Allow external connections
       port: parseInt(env.VITE_PORT || '3000'),
       proxy: {
         '/api': {
