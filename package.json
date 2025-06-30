@@ -41,5 +41,10 @@
     "ioredis": "^5.4.1",
     "node-llama-cpp": "^3.3.0",
     "tiktoken": "^1.0.21"
+  },
+  "overrides": {
+    "@xenova/transformers": {
+      "onnxruntime-node": "npm:onnxruntime-web@latest"
+    }
   }
 }
