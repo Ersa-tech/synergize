@@ -1,4 +1,4 @@
-import { TokenCounter } from './tokenCounter.js';
+import { TokenCounter } from './tokenCounter';
 import { CollaborationPhase } from '../models/types.js';
 import { createLogger } from '../utils/logger.js';
 
