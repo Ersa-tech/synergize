@@ -7,6 +7,8 @@ env.backends.onnx.wasm.numThreads = 4;
 // Force WASM backend to avoid native addon issues
 env.backends.onnx.wasm.wasm = true;
 env.backends.onnx.wasm.wasmPaths = path.join(process.cwd(), 'node_modules/onnxruntime-web/dist/');
+// Explicitly disable the Node.js backend to prevent native addon loading
+env.backends.onnx.node.disabled = true;
 env.allowRemoteModels = true;
 env.localModelPath = './models/embeddings';
 
