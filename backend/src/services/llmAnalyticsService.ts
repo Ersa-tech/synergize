@@ -1,7 +1,7 @@
 import { ModelService } from './modelService.js';
 import { RedisService } from './redisService.js';
 import { PromptFormatter } from './promptFormatter.js';
-import { TokenCounter } from './tokenCounter';
+import { TokenCounter } from './tokenCounter.js';
 import { createLogger } from '../utils/logger.js';
 import { CollaborationPhase } from '../models/types.js';
 import { ConversationTurn } from '../models/conversationTypes.js';

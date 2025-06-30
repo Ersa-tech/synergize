@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "tsx watch backend/src/server.ts",
-    "dev:frontend": "cd frontend && vite",
+    "dev:frontend": "npm --prefix frontend run dev",
     "build": "npm run build:backend && npm run build:frontend",
     "build:backend": "tsc -p backend/tsconfig.json",
     "build:frontend": "cd frontend && vite build",

@@ -1,7 +1,7 @@
 import { RedisService } from './redisService.js';
 import { RedisVectorStore } from './redisVectorStore.js';
 import { SynthesisService } from './synthesisService.js';
-import { TokenCounter } from './tokenCounter';
+import { TokenCounter } from './tokenCounter.js';
 import { ContextAllocator } from './contextAllocator.js';
 import { ConversationCompressor } from './conversationCompressor.js';
 import { ModelService } from './modelService.js';

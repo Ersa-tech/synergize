@@ -1,9 +1,12 @@
 import { pipeline, env } from '@xenova/transformers';
+import path from 'path';
 import { createLogger } from '../utils/logger.js';
 
 // Force CPU execution only
 env.backends.onnx.wasm.numThreads = 4;
-// Skip WebGPU configuration - not needed for CPU-only execution
+// Force WASM backend to avoid native addon issues
+env.backends.onnx.wasm.wasm = true;
+env.backends.onnx.wasm.wasmPaths = path.join(process.cwd(), 'node_modules/onnxruntime-web/dist/');
 env.allowRemoteModels = true;
 env.localModelPath = './models/embeddings';
 

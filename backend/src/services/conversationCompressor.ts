@@ -1,5 +1,5 @@
 import { ModelService } from './modelService.js';
-import { TokenCounter } from './tokenCounter';
+import { TokenCounter } from './tokenCounter.js';
 import { CollaborationPhase } from '../models/types.js';
 import { createLogger } from '../utils/logger.js';
 import { LlamaChatSession } from 'node-llama-cpp';
