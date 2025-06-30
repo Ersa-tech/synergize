@@ -5,7 +5,7 @@ import { PromptFormatter } from './promptFormatter.js';
 import { ConversationStateManager } from './conversationStateManager.js';
 import { ConversationCurator } from './conversationCurator.js';
 import { ContextAllocator, TokenAllocation } from './contextAllocator.js';
-import { TokenCounter } from './tokenCounter.ts';
+import { TokenCounter } from './tokenCounter.js';
 import { 
   CollaborationPhase, 
   SSEMessage, 
